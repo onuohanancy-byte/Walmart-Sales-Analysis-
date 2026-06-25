@@ -1,0 +1,7 @@
+SELECT
+store,
+Isholiday'
+AVG(Weekly Sales) AS
+Avg Weekly Sales
+FROM Walmart
+GROUP BY Store, IsHoliday
