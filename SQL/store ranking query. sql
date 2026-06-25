@@ -1,0 +1,7 @@
+SELECT 
+Store,
+SUM (Weekly Sales) AS Total Sales,
+RANK() OVER (ORDER BY
+SUM(Weekly sales) DESC) AS Store Rank
+FROM Walmart
+GROUP BY Store
